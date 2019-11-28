@@ -1,0 +1,20 @@
+#Log configurations
+logging:
+  file:
+    name: D:\\Ashok IT School\\SpringBoot-Cloud-MicroServices\\Work-Space\\logs\\CustomerWebClient.log
+  level:
+    org:
+      springframework: ERROR
+    com:
+      customer: 
+        client: 
+          service: DEBUG
+
+web-client:
+  messages:
+    GET_CUSTOMER_BY_EMAIL: http://localhost:6060/getEmail/{email}
+    GET_CUSTOMER_BY_ID : http://localhost:6060/get?customerID=
+    GET_ALL_CUSTOMER_EMAILS: http://localhost:6060/getEmails
+    ADD_CUSTOMER_DETAILS: http://localhost:6060/add
+    
+     
